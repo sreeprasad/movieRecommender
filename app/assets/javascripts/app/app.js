@@ -1,7 +1,7 @@
 // app/assets/javascripts/app/app.js
 'use strict';
 
-angular.module('popcornApp',['ngRoute','ngCookies','popcornApp.controllers','popcornApp.services','popcornApp.directives'])
+angular.module('popcornApp',['ngRoute','ngCookies','popcornApp.controllers','popcornApp.services','popcornApp.directives','popcornApp.resources'])
 
 .config(function ($routeProvider,$locationProvider){
 	$routeProvider
@@ -21,6 +21,13 @@ angular.module('popcornApp',['ngRoute','ngCookies','popcornApp.controllers','pop
 		redirectTo :'/'
 	});
 	$locationProvider.html5Mode(true);
+})
+
+.run(function($injector){
+
+	window.Movie = $injector.get('Movie');
+	window.Favorite = $injector.get('Favorite');
+	
 });
 
 

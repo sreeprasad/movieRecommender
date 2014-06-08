@@ -6,6 +6,7 @@ gem 'rails', '4.1.0'
 
 #adding angular js for ruby
 gem 'angularjs-rails', "=1.2.6"
+gem 'angularjs-rails-resource', "=0.2.5"
 
 gem 'underscore-rails', '~> 1.6.0'
 
