@@ -1,0 +1,1 @@
+curl -d '{"title":"The Royal Tenenbaums","youtube_id":"8Eg6yIwP2vs","poster_url":"http://i.imgur.com/np5EP3N.jpg"}' http://0.0.0.0:3000/movies --header "Accept: application/json" --header "Content-Type: application/json" --header 'X-CSRF-Token: c+wfMNX2IWLjjD1YLQtEvaBpRNx12XJv+90KQDoVuNg=' --cookie cookie
