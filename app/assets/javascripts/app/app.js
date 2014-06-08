@@ -8,14 +8,16 @@ angular.module('popcornApp',['ngRoute','ngCookies','popcornApp.controllers','pop
 	.when('/movie/:movie_id',{
 		templateUrl:'/templates/movie.html',
 		controller:'MovieController'
-
 	}).when('/',{
 		controller :'MoviesController',
 		templateUrl:'/templates/movies.html'
 	}).when('/login',{
 		templateUrl:'/templates/login.html',
 		controller:'LoginController'
-	}).otherwise({
+	}).when('/user/:user_id',{
+        templateUrl: '/templates/profile.html', 
+        controller: 'ProfileController'
+    }).otherwise({
 		redirectTo :'/'
 	});
 	$locationProvider.html5Mode(true);

@@ -9,6 +9,8 @@ gem 'angularjs-rails', "=1.2.6"
 
 gem 'underscore-rails', '~> 1.6.0'
 
+gem 'devise', "=3.2.2"
+
 #adding bootstap
 gem 'bootstrap-sass-rails', "=3.0.3.0"
 
