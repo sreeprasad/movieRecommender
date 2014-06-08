@@ -1,11 +1,15 @@
 // app/assets/javascripts/app/app.js
 'use strict';
 
-angular.module('popcornApp',['ngRoute','popcornApp.controllers'])
+angular.module('popcornApp',['ngRoute','popcornApp.controllers','popcornApp.services'])
 
 .config(function ($routeProvider,$locationProvider){
 	$routeProvider
-	.when('/',{
+	.when('/movie/:movie_id',{
+		templateUrl:'/templates/movie.html',
+		controller:'MovieController'
+
+	}).when('/',{
 		controller :'MoviesController',
 		templateUrl:'/templates/movies.html'
 	})
@@ -13,8 +17,6 @@ angular.module('popcornApp',['ngRoute','popcornApp.controllers'])
 		redirectTo :'/'
 	});
 	$locationProvider.html5Mode(true);
-})
-
-.controller('MovieController', function($scope){
-	console.log("Movie controller --");
 });
+
+

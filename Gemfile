@@ -7,6 +7,7 @@ gem 'rails', '4.1.0'
 #adding angular js for ruby
 gem 'angularjs-rails', "=1.2.6"
 
+gem 'underscore-rails', '~> 1.6.0'
 
 #adding bootstap
 gem 'bootstrap-sass-rails', "=3.0.3.0"
